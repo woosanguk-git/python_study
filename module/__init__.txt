@@ -1,0 +1,11 @@
+실제 파일 이름은 __init__.py 이지만 예제를 위해 일반 텍스트로 작성
+
+__init__.py 는 빈 파일일 수도 있지만 패키지의 초기화 코드를 실행하거나
+__all__ 변수를 정의 할 수도있다.
+
+__all__ =["파일명"]
+은 from package import * 를 만날 때 임포트 해야만 하는 모듈들의 이름들을 넣는다.
+
+예를들어
+__all__ = ["echo", "surround", "reverse"]
+는 from sound.effects import * 에서 위의 3모듈만 임포트 하게 됨을 의미한다.

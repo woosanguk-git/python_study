@@ -51,7 +51,7 @@ class Circle(Point):
         return 2*math.pi*self.radius
 
     def __eq__(self, other):
-        return self.radius == other.radius and super().__eq__(ohter)
+        return self.radius == other.radius and super().__eq__(other)
 
     def __repr__(self):
         return "circle ({0.radius!r}, {0.x!r})".format(self)
